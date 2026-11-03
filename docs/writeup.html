@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Two $60 GPUs, One Hypervisor">
 <meta name="twitter:description" content="Local LLMs and hashcat on Proxmox with AMD Polaris.">
-<meta name="twitter:image" content="https://timsalvador.com/img/blog/rx580-prox/cover.jpg">
+<meta name="twitter:image" content="https://www.timsalvador.com/assets/img/blog/rx580-prox/cover.jpg">
 <style>
   :root {
     color-scheme: light dark;
@@ -87,7 +87,7 @@
   </div>
 </header>
 <main class="wrap">
-<figure class="cover-fig"><img class="cover" src="https://timsalvador.com/img/blog/rx580-prox/cover.jpg" alt="Dual RX 580s in Proxmox running Ollama on Vulkan, with the inference-compute log showing two RADV POLARIS10 devices and a PASS line"></figure>
+<figure class="cover-fig"><img class="cover" src="https://www.timsalvador.com/assets/img/blog/rx580-prox/cover.jpg" alt="Dual RX 580s in Proxmox running Ollama on Vulkan, with the inference-compute log showing two RADV POLARIS10 devices and a PASS line"></figure>
 <hr />
 <p>I run a homelab on a single Proxmox box: a dozen-plus LXCs and VMs doing DNS, databases, a reverse proxy, a security lab, Home Assistant, and a couple of Ollama servers. The Ollama instances were stuck on CPU, which is fine for tiny models but painful for anything else. Since I had two Radeon RX 580s in the machine already that were doing nothing useful, I figured I'd put them to work. Initially I planned to use both within a single container to GPU-accelerate my local LLMs, but later thought why not share the wealth and opted to add GPU password cracking in a second container. Two containers both sharing the same two cards seemed logical based on the use case and the frequency I would need to use each. This is the full account of getting there, including the months-old failed attempts I had to clean up first, the vendor I briefly thought I owned, and the handful of things that broke along the way. The working scripts are in this repo.</p>
 <h2>TL;DR</h2>
