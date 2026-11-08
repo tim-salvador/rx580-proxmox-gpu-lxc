@@ -11,7 +11,7 @@ No ROCm (dropped for Polaris), no proprietary driver, no DKMS. The in-tree `amdg
 
 > Built and validated on Proxmox VE 9.2 (Debian 13 / trixie, kernel 7.0.x-pve) with 2x PowerColor RX 580 8GB (`1002:67df`). The scripts are hardware-agnostic within the AMD Polaris/Vulkan family but the benchmarks and defaults assume this setup.
 
-**📖 The full story, including the dead ends and lessons, is in [docs/writeup.md](docs/writeup.md).** It reads as a blog post and doubles as a build log. A styled HTML version for publishing is at [docs/writeup.html](docs/writeup.html).
+**📖 The full story, including the dead ends and lessons, is at [timsalvador.com/blog/rx580-proxmox-gpu-lxc](https://www.timsalvador.com/blog/rx580-proxmox-gpu-lxc/) and in [docs/writeup.md](docs/writeup.md).** It reads as a blog post and doubles as a build log.
 
 ---
 
@@ -39,7 +39,7 @@ Two RX 580s, measured on this host (CPU is an i7-4790K for comparison):
 
 ```
 scripts/        the check -> act -> verify tooling (see scripts/RUNBOOK.md)
-docs/           the writeup (Markdown + styled HTML) and image folder
+docs/           the writeup (Markdown) and image folder
 ```
 
 `scripts/RUNBOOK.md` is the operational reference: every phase, every command, troubleshooting, and rollback.

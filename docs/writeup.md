@@ -1,3 +1,7 @@
+---
+tags: [proxmox, gpu, local-llm, hashcat]
+---
+
 # Two $60 GPUs, One Hypervisor: Running Local LLMs and hashcat on Proxmox with AMD Polaris
 
 *How I got a pair of Radeon RX 580s doing useful work inside Proxmox LXCs: Ollama over Vulkan, hashcat over Rusticl, Home Assistant on top, and every dead end in between.*
