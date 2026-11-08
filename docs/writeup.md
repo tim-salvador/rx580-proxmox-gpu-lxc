@@ -4,7 +4,7 @@
 
 ---
 
-![Dual RX 580s in Proxmox running Ollama on Vulkan](images/cover.jpg)
+![Dual RX 580s in Proxmox running Ollama on Vulkan, with the inference-compute log showing two RADV POLARIS10 devices and a PASS line](images/cover.jpg)
 
 I run a homelab on a single Proxmox box: a dozen-plus LXCs and VMs doing DNS, databases, a reverse proxy, a security lab, Home Assistant, and a couple of Ollama servers. The Ollama instances were stuck on CPU, which is fine for tiny models but painful for anything else. Since I had two Radeon RX 580s in the machine already that were doing nothing useful, I figured I'd put them to work. Initially I planned to use both within a single container to GPU-accelerate my local LLMs, but later thought why not share the wealth and opted to add GPU password cracking in a second container. Two containers both sharing the same two cards seemed logical based on the use case and the frequency I would need to use each. This is the full account of getting there, including the months-old failed attempts I had to clean up first, the vendor I briefly thought I owned, and the handful of things that broke along the way. The working scripts are in this repo.
 
