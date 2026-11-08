@@ -304,4 +304,4 @@ The real lesson, the one that generalizes past these specific cards: **the vendo
 
 *Build notes, scripts, and the full validation harness are in the companion repo: [github.com/tim-salvador/rx580-proxmox-gpu-lxc](https://github.com/tim-salvador/rx580-proxmox-gpu-lxc). Questions or corrections welcome.*
 
-*Tim Salvador · [timsalvador.com](https://timsalvador.com) · [github.com/tim-salvador](https://github.com/tim-salvador) · [linkedin.com/in/tim-salvador](https://linkedin.com/in/tim-salvador)*
+*Tim Salvador · [timsalvador.com/blog/rx580-proxmox-gpu-lxc](https://www.timsalvador.com/blog/rx580-proxmox-gpu-lxc/) · [github.com/tim-salvador](https://github.com/tim-salvador) · [linkedin.com/in/tim-salvador](https://linkedin.com/in/tim-salvador)*
