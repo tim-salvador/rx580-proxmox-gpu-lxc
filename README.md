@@ -1,5 +1,7 @@
 # rx580-proxmox-gpu-lxc
 
+Originally published at https://www.timsalvador.com/blog/rx580-proxmox-gpu-lxc/
+
 Share a pair of AMD Radeon RX 580 (Polaris / gfx803) GPUs into **unprivileged Proxmox LXCs** for two workloads at once:
 
 - **Ollama** (local LLMs) via **Mesa RADV / Vulkan**
